@@ -5,11 +5,14 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve"
+    "start": "webpack serve",
+    "watch:sass": "sass --watch src/scss/main.scss public/css/style.css"
   },
   "author": "Parliamentary Digital Service",
   "license": "",
   "devDependencies": {
+    "css-loader": "^7.1.2",
+    "sass-loader": "^16.0.5",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.2",
     "webpack": "^5.98.0",
