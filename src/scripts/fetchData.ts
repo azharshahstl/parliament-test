@@ -38,6 +38,7 @@ export async function createMemberCardFromAPI(): Promise<void> {
     };
 
     const card = new MemberCard(cardData);
+
     document.getElementById("container")?.appendChild(card.render());
   } catch (error) {
     console.error("Failed to fetch card data", error);
