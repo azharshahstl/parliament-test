@@ -49,19 +49,20 @@ body {
   padding: toRem(15) toRem(30);
 }
 
-.content {
-  width: 100%;
-  padding-right: toRem(15);
-}
-
-.card {
+.pds__card {
   display: flex;
+  // flex-wrap: wrap;
   background-color: $Background;
   width: auto;
   border-top: 5px solid $Brand;
 }
 
-.img {
+.pds__content {
+  width: 100%;
+  padding-right: toRem(15);
+}
+
+.pds__img {
   border-width: 3px;
   border-style: solid;
   border-radius: 100%;
@@ -72,7 +73,7 @@ body {
   margin: toRem(15) toRem(20) 0 toRem(15);
 }
 
-.party {
+.pds__party {
   font-size: $secondary-fontsize-sm;
   line-height: $secondary-lineheight;
   color: $Grey-2;
@@ -80,7 +81,7 @@ body {
   margin-bottom: toRem(5);
 }
 
-.name {
+.pds__name {
   font-size: $primary-fontsize-sm;
   line-height: $primary-lineheight;
   color: $Brand;
@@ -88,14 +89,14 @@ body {
   margin-bottom: toRem(15);
 }
 
-.constituency {
+.pds__constituency {
   font-size: $tertiary-fontsize;
   line-height: $tertiary-lineheight;
   margin-bottom: toRem(20);
   color: $Grey-2;
 }
 
-.no-longer-serving {
+.pds__no-longer-serving {
   font-size: $tertiary-fontsize;
   font-weight: bold;
   color: $Alert;
@@ -116,7 +117,7 @@ body {
     padding: 0;
   }
 
-  .card {
+  .pds__card {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -126,7 +127,7 @@ body {
     padding: 0 toRem(20) toRem(15) toRem(20);
   }
 
-  .img {
+  .pds__img {
     width: toRem(100);
     height: toRem(100);
     border-width: 5px;
@@ -134,21 +135,21 @@ body {
     margin-top: toRem(20);
   }
 
-  .party {
+  .pds__party {
     font-size: $secondary-fontsize-lg;
     margin-top: toRem(20);
   }
 
-  .name {
+  .pds__name {
     margin-bottom: toRem(20);
   }
 
-  .constituency {
+  .pds__constituency {
     margin-bottom: toRem(20);
     color: $Grey-2;
   }
 
-  .no-longer-serving {
+  .pds__no-longer-serving {
     margin-bottom: toRem(15);
     padding: toRem(15);
   }

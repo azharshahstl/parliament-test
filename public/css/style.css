@@ -18,19 +18,19 @@ body {
   padding: 0.9375rem 1.875rem;
 }
 
-.content {
-  width: 100%;
-  padding-right: 0.9375rem;
-}
-
-.card {
+.pds__card {
   display: flex;
   background-color: #ffffff;
   width: auto;
   border-top: 5px solid #373151;
 }
 
-.img {
+.pds__content {
+  width: 100%;
+  padding-right: 0.9375rem;
+}
+
+.pds__img {
   border-width: 3px;
   border-style: solid;
   border-radius: 100%;
@@ -39,7 +39,7 @@ body {
   margin: 0.9375rem 1.25rem 0 0.9375rem;
 }
 
-.party {
+.pds__party {
   font-size: 1.25rem;
   line-height: 1.35rem;
   color: #4d4d4d;
@@ -47,7 +47,7 @@ body {
   margin-bottom: 0.3125rem;
 }
 
-.name {
+.pds__name {
   font-size: 1.625rem;
   line-height: 1.25rem;
   color: #373151;
@@ -55,14 +55,14 @@ body {
   margin-bottom: 0.9375rem;
 }
 
-.constituency {
+.pds__constituency {
   font-size: 1.125rem;
   line-height: 1.5rem;
   margin-bottom: 1.25rem;
   color: #4d4d4d;
 }
 
-.no-longer-serving {
+.pds__no-longer-serving {
   font-size: 1.125rem;
   font-weight: bold;
   color: #a72326;
@@ -81,7 +81,7 @@ body {
   #container {
     padding: 0;
   }
-  .card {
+  .pds__card {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -90,25 +90,25 @@ body {
     border-left: 5px solid #373151;
     padding: 0 1.25rem 0.9375rem 1.25rem;
   }
-  .img {
+  .pds__img {
     width: 6.25rem;
     height: 6.25rem;
     border-width: 5px;
     margin-left: 0;
     margin-top: 1.25rem;
   }
-  .party {
+  .pds__party {
     font-size: 1.375rem;
     margin-top: 1.25rem;
   }
-  .name {
+  .pds__name {
     margin-bottom: 1.25rem;
   }
-  .constituency {
+  .pds__constituency {
     margin-bottom: 1.25rem;
     color: #4d4d4d;
   }
-  .no-longer-serving {
+  .pds__no-longer-serving {
     margin-bottom: 0.9375rem;
     padding: 0.9375rem;
   }
