@@ -33,37 +33,37 @@ export default class MemberCard {
 
   render(): HTMLElement {
     const cardEl = document.createElement("div");
-    cardEl.className = "card";
+    cardEl.className = "pds__card";
 
     const imgEl = document.createElement("img");
-    imgEl.className = "img";
+    imgEl.className = "pds__img";
     imgEl.src = this.thumbnailUrl;
     imgEl.alt = "";
     imgEl.style.borderColor = "#" + this.partyColour;
     cardEl.appendChild(imgEl);
 
     const contentEl = document.createElement("div");
-    contentEl.className = "content";
+    contentEl.className = "pds__content";
     cardEl.appendChild(contentEl);
 
     const partyEl = document.createElement("div");
-    partyEl.className = "party";
+    partyEl.className = "pds__party";
     partyEl.textContent = this.party;
     contentEl.appendChild(partyEl);
 
     const nameEl = document.createElement("div");
-    nameEl.className = "name";
+    nameEl.className = "pds__name";
     nameEl.textContent = this.name;
     contentEl.appendChild(nameEl);
 
     const constituencyEl = document.createElement("div");
-    constituencyEl.className = "constituency";
+    constituencyEl.className = "pds__constituency";
     constituencyEl.textContent = this.constituency;
     contentEl.appendChild(constituencyEl);
 
     if (!this.isServing) {
       const noLongerServingEl = document.createElement("div");
-      noLongerServingEl.className = "no-longer-serving";
+      noLongerServingEl.className = "pds__no-longer-serving";
       noLongerServingEl.textContent = "No longer serving";
       contentEl.appendChild(noLongerServingEl);
     }
