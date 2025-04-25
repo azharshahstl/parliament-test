@@ -1,8 +1,10 @@
 import MemberCard from "./member-card";
 import { MemberData } from "./member-card";
 
-// Use this to dynamically capture the member Id from the URL.
-const memberId = window.location.pathname;
+// Use this to dynamically capture the member Id as a search param.
+const memberIdQuery = window.location.search;
+const memberIdParams = new URLSearchParams(memberIdQuery);
+const memberId = memberIdParams.get("id")
 
 const membersURL = `https://members-api.parliament.uk/api/Members/${memberId}`;
 
