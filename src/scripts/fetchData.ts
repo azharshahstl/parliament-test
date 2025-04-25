@@ -2,9 +2,9 @@ import MemberCard from "./member-card";
 import { MemberData } from "./member-card";
 
 // Use this to dynamically capture the member Id from the URL.
-const memberIdURL = window.location.pathname;
+const memberId = window.location.pathname;
 
-const membersURL = `https://members-api.parliament.uk/api/Members/4321`;
+const membersURL = `https://members-api.parliament.uk/api/Members/${memberId}`;
 
 export async function createMemberCardFromAPI(): Promise<void> {
   try {
