@@ -41,6 +41,8 @@ export async function createMemberCardFromAPI(): Promise<void> {
 
     document.getElementById("container")?.appendChild(card.render());
   } catch (error) {
+    // Would recommend showing a card with content describing the failed fetch
+    // but that would require design input.  So just consoling the error here.
     console.error("Failed to fetch card data", error);
   }
 }
